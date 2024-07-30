@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>1.html</title>
+</head>
+
+    <h1>Comprehensive Registration Form:</h1>
+    
+        Full Name:
+        <input type="text" name="Full name" placeholder="Enter your Full Name"/>
+        <br/><br/>
+        E-mail Id:
+        <input type="email" name="mail" placeholder="Enter your mail id" required/>
+        <br/><br/>
+        Password:
+        <input type="password" name="password" maxlength="20" placeholder="Enter your password" required/>
+        <br/><br/>
+        Confirm Password:
+        <input maxlength="20 " input="password" name="confirm password" placeholder="confirm your password" required/>
+        <br/><br/>
+        Date of Birth:
+        <input type="date" name="dateofbirth" max="2007-12-31" required/>
+        <br/><br/>
+        <select name="gender" id="gender">
+            <option value="">Select Your Gender</option>
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+            <option value="others">others</option>
+        </select>
+        <br/><br/>
+        <input type="radio" name="radio"  value="Free"/>
+        <label for="free">Free</label>
+        <input type="radio" name="radio"  value="Basic"/>
+        <label for="basic">Basic</label>
+        <input type="radio" name="radio"  value="Premium"/>
+        <label for="Premium">Premium</label>
+        <br/><br/>
+        <input type="checkbox" name="Reading" value="reading">Reading</input>
+        <input type="checkbox" name="travelling" value="travelling">Travelling</input>
+        <input type="checkbox" name="coding" value="coding">Coding</input>
+        <input type="checkbox" name="sports" value="sports">Sports</input>
+        <br/><br/>
+        <input type="file" name="file upload" accept="image/png, image/jpg" required/>
+        <br/><br/>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

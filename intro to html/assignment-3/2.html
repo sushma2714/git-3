@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+    <title>2.html</title>
+    <style>
+        datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 200px;
+}
+
+option {
+  padding: 0;
+}
+input[type="range"] {
+  width: 200px;
+  margin: 0;
+}
+    </style>
+</head>
+<body>
+    <h1>Detailed Feedback Form with Inline Elements:</h1>
+    <br/>
+    <b>User Name:</b>
+        <input type="text" name="User name" placeholder="Enter your Full Name"/>
+        <br/><br/>
+        <b>E-mail Id:</b>
+        <input type="email" name="mail" placeholder="Enter your mail id" required/>
+        <br/><br/>
+       <textarea name="feedback" id="feedback-policy" required>Enter your Feedback Here</textarea>
+        <br/><br/>
+        <i>service:</i>
+        <br/>
+        <input type="range" name="service" id="myrange" min="0" max="10" list="value"/>
+        
+        <datalist id="value">
+            <option value="0" label="0">0</option>
+            <option value="2" label="2">2</option>
+            <option value="4"label="4">4</option>
+            <option value="6"label="6">6</option>
+            <option value="8"label="8">8</option>
+            <option value="10"label="10">10</option>
+          </datalist>
+          <input type="radio" name="feedback" value="compliment"><u>compliment</u></input>
+          <br/>
+          <input type="radio" name="feedback" value="complaint">complaint</input><br/>
+          <input type="radio" name="feedback" value="suggestion">suggestion</input><br/><br/>
+
+          <input type="checkbox" name="feedback" value="feedbackpolicy">Feedback Policy</input>
+          
+          <a href="#feedback-policy" style="position: absolute; bottom:8px;left: 3px;">Feedback Policy</a>
+</body>
+</html>

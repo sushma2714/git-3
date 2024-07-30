@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>3.html</title>
+</head>
+<body>
+    <h1>Product Order Form with Advanced Attributes:</h1>
+    UserName:
+    <input type="text" name="Username" placeholder="Enter Username" />
+    <br/><br/>
+    E-mail Id:
+        <input type="email" name="mail" placeholder="Enter your mail id" required/>
+        <br/><br/>
+        <select name="product" id="category">
+            <option value="">--please choose an option--</option>
+                    <optgroup label="Electronics">
+                    <option value="laptop">Laptops</option>
+                    <option value="smartphone">SmartPhone</option>
+                    <option value="tablet">Tablet</option>
+                </optgroup>
+            
+            <optgroup label="Books">
+                
+                    <option value="horror">Horror</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="mystery">Mystery</option>
+                
+            </optgroup>
+            <optgroup label="Clothing">
+
+                    <option value="kurta">Kurta</option>
+                    <option value="jeans">Jean</option>
+                    <option value="top">Top</option>
+                
+            </optgroup>
+        </select>
+        <input type="number" name="quantity" min="1" max="10" step="1" placeholder="select quantity">Quantity</input>
+        <br/><br/>
+        Preferred Delivery:
+        <input type="datetime-local" name="deliverydate" min="2024-07-30T00:00">
+        <br/><br/>
+        <textarea name="additional notes" id="comments">Additional Notes</textarea>
+        <br/><br/>
+        Payment Option:
+        <br/><br/>
+        <input type="checkbox" name="creditcard">CreditCard</input>
+        <input type="checkbox" name="paypal">PayPal</input>
+        <input type="checkbox" name="banktransfer">BankTransfer</input>
+        <br/><br/>
+        <button type="submit">Submit</button>
+</body>
+</html>
